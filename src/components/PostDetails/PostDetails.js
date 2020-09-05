@@ -38,13 +38,13 @@ const PostDetails = () => {
 			<div
 				style={{
 					textAlign: "center",
-					margin: "10px auto 50px",
-					backgroundColor: "#8BC34A",
-					color: "white",
+					margin: "30px auto 50px",
+					backgroundColor: "wheat",
+					color: "black",
 					padding: "40px",
 					borderRadius: "20px",
-					width: "85%",
-					boxShadow: "5px 5px 10px lightgray",
+					width: "80%",
+					boxShadow: "5px 5px 20px lightgray",
 				}}
 			>
 				<h1>{id || 0}</h1>

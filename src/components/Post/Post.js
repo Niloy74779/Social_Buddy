@@ -14,6 +14,7 @@ const useStyles = makeStyles({
 		width: "25%",
 		margin: "1%",
 		padding: "2%",
+		backgroundColor: "whitesmoke",
 	},
 	id: {
 		fontSize: 20,
@@ -22,7 +23,7 @@ const useStyles = makeStyles({
 	title: {
 		fontSize: 25,
 		marginBottom: "20px",
-		color: "lightcoral",
+		color: "black",
 	},
 	button: {
 		margin: "auto",
@@ -38,10 +39,10 @@ const Post = ({ post }) => {
 	return (
 		<Card className={classes.card}>
 			<CardContent>
-				<Typography className={classes.id} color="textSecondary" gutterBottom>
+				<Typography className={classes.id} color="whitesmoke" gutterBottom>
 					{id}
 				</Typography>
-				<Typography variant="h4" className={classes.title} component="h4">
+				<Typography variant="h3" className={classes.title} component="h3">
 					{title}
 				</Typography>
 

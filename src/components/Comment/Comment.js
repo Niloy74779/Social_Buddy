@@ -12,11 +12,13 @@ const useStyles = makeStyles({
 		margin: "20px auto",
 		padding: "20px",
 		borderRadius: "20px",
-		width: "85%",
-		boxShadow: "5px 5px 10px lightgray",
+		width: "80%",
+		boxShadow: "5px 5px 10px gray",
+		backgroundColor: "whitesmoke",
 	},
 	userCommentSection: {
 		textAlign: "left",
+		paddingLeft:"20px",
 	},
 });
 
