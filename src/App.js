@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Posts from "./components/Posts/Posts";
+import PostDetails from "./components/PostDetails/PostDetails";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NotFound404 from "./components/404/NotFound404";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Router>
+				<Header />
+				<Switch>
+					<Route exact path="/">
+						<Posts />
+					</Route>
+					<Route exact path="/posts">
+						<Posts />
+					</Route>
+					<Route exact path="/posts/:postId">
+						<PostDetails />
+					</Route>
+					<Route path="*">
+						<NotFound404 />
+					</Route>
+				</Switch>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
